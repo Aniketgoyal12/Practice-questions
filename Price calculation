@@ -1,0 +1,15 @@
+//Program to calculate price of an item after adding sales tax//
+#include <stdio.h>
+int main()
+
+{
+    float price,rate,fprice;
+    printf("Enter the price of item");
+    scanf("%f",&price);
+    printf("Enter the tax rate");
+    scanf("%f",&rate);
+    
+    fprice = price + (price * rate / 100);
+    printf("Price after adding tax is %f",fprice);
+    return 0;
+}
