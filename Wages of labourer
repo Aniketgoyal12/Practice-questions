@@ -1,0 +1,33 @@
+Write a C program to calculate the weekly wages of an employee. The pay depends on wages per hour and number of hours worked. Moreover, if the employee has worked for more than 30 hours, then he or she gets twice the wages per hour, for every extra hour that he or she has worked.
+
+
+
+
+
+
+//Program to calculate wages of labourers//
+
+#include <stdio.h>
+#include <math.h>
+int main()
+
+{
+    int wages,time,fwages,dwages;
+    printf("Enter the per hour wages of a labourer:");
+    scanf("%d",&wages);
+    printf("Enter the working time (in hours):");
+    scanf("%d",&time);
+    
+    fwages = wages * time ;
+    
+    if(time > 30)
+    {
+        dwages = fwages * 2;
+        printf("The wages for working more than 30 hrs is: %d",dwages);
+    }
+    else
+    {
+        printf("The total wages of labourer is: %d",fwages);
+    }
+    return 0;
+}
