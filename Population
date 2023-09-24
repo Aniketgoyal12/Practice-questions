@@ -1,0 +1,22 @@
+The population of a city is 30000. It increases by 20 % during first year and 30% during the second year. Write a program to find the population after two years? (Ans: 46800)
+
+//Write a program to calculate the population of a city//
+
+#include <stdio.h>
+int main ()
+
+{
+    int p = 30000,p1,y1,p2,total;
+    float rate1=20,rate2=30;
+    
+    p1 = p * 20 / 100;
+    y1 = p + p1;
+    p2 = y1 * 30 / 100;
+    total = y1 + p2;
+    printf("\nThe total population after 2 years is : %d",total);
+    
+    return 0;
+}
+
+
+
