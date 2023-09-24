@@ -1,0 +1,17 @@
+Write a program to calculate salary of an employee, given his basic pay (entered by user), HRA=15% of the basic pay and TA=20% of the basic pay.
+
+// PROGRAM TO CALCULATE THE SALARY OF EMPLOYEE//
+
+#include <stdio.h>
+int main()
+
+{
+    float basicpay,HRA,TA,salary;
+    printf("Enter the basic pay :");
+    scanf("%f",&basicpay);
+    HRA = basicpay * 15 / 100;
+    TA = basicpay *20 / 100;
+    salary = basicpay - HRA - TA;
+    printf("The salary of the employee is : %.2f",salary);
+    return 0;
+}
