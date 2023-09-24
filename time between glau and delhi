@@ -1,0 +1,16 @@
+Suppose distance between GLA University and Delhi is m km (to be entered by user), by BUS you can reach Delhi in 4 hours. Develop a ‘C’ program to calculate speed of bus
+
+
+// Program to calculate the speed of bus//
+
+#include <stdio.h>
+int main()
+
+{
+    int d,t=4,v;
+    printf("Enter the distance between GLAU and Delhi");
+    scanf("%d",&d);
+    v = d/t;
+    printf("The speed of the bus is : %d",v);
+    return 0;
+}
