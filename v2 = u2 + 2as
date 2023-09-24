@@ -1,0 +1,18 @@
+. A car travelling at 30 m/s accelerates steadily at 5 m/s2 for a distance of 70 m. What is the final velocity of the car? [Hint: v2 = u2 + 2as]
+
+  //Program to find the final velocity of a car//
+
+#include <stdio.h>
+#include <math.h>
+
+int main()
+{
+    int v,u = 30,a = 5,s = 70;
+    int upow = pow(u,2);
+    int spow  = 2*a*s;
+    v = upow + spow;
+    int vpow = pow(v,0.5);
+    printf("The final velocity of the car is = %d m/s",vpow);
+    return 0;
+    
+}
