@@ -1,0 +1,17 @@
+One day when I was going for a lunch, suddenly rain started, I was very hungry so started running with speed of 4km/h and it took 3 min to reach mess. Help me to develop a ‘C’ program to calculate distance travelled by me.
+
+
+
+// Program to find distance covered//
+
+#include <stdio.h>
+int main()
+{
+    float speed=4,time=3,time1,distance;
+    //Conversion of time in hours//
+    time1 = time / 60;
+    //Calculations of distance//
+    distance = speed * time1;
+    printf("\nThe distance covered is %.2f km",distance);
+    return 0;
+}
