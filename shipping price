@@ -1,0 +1,30 @@
+You are developing a program to calculate the shipping cost for a customer's
+order. The shipping cost is based on the weight of the order and the distance to the customer's
+location. Write a C program to calculate the shipping cost for a customer's order, given the
+weight of the order and the distance to the customer's location. 
+
+
+//Program to calculate the shipping cost of a parcel//
+#include <stdio.h>
+int main()
+{
+    float weight,distance,r1,r2,price;
+    //Calculation of price according to weight//
+    printf("Enter the weight of the parcel (in kg)");
+    scanf("%f",&weight);
+    printf("\nEnter the per kg rate of shipping");
+    scanf("%f",&r1);
+    
+    float price1 = weight * r1;
+    //Calculationof price according to distance//
+    printf("\nEnter the distance to be covered (in km)");
+    scanf("%f",&distance);
+    printf("\nEnter the per km rate of shipping");
+    scanf("%f",&r2);
+    
+    float price2 = distance * r2;
+    
+    price = price1 + price2;
+    printf("\nThe final price of shipping = %.2f",price);
+    return 0;
+}
