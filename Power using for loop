@@ -1,0 +1,18 @@
+//Power of a number using for loop//
+
+#include <stdio.h>
+int main()
+{
+    int n,i,exp;
+    long long power=1;
+    printf("Enter base:");
+    scanf("%d",&n);
+    printf("Enter the exponent");
+    scanf("%d",&exp);
+    for(i=1;i<=exp;i++)
+    {
+        power = power * n;
+    }
+    printf("%d raised to the power %d is %lld",n,exp,power);
+    return 0;
+}
